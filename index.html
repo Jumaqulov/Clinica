@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МедЦентр Здоровье - Запись к врачу онлайн</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="icon" data-lucide="heart-pulse"></i>
+                <span class="logo-text">МедЦентр</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Главная</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#doctors" class="nav-link">Врачи</a></li>
+                <li><a href="#about" class="nav-link">О клинике</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <button class="nav-cta">
+                <i class="icon" data-lucide="calendar-plus"></i>
+                Записаться
+            </button>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="icon" data-lucide="shield-check"></i>
+                    <span>Лицензированная клиника</span>
+                </div>
+                <h1 class="hero-title">
+                    Ваше <span class="accent-text">здоровье</span> -
+                    наша главная забота
+                </h1>
+                <p class="hero-description">
+                    Современная диагностика, опытные врачи и индивидуальный подход к каждому пациенту.
+                    Запишитесь на прием онлайн за 30 секунд.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="icon" data-lucide="users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">15,000+</span>
+                            <span class="stat-label">Довольных пациентов</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="icon" data-lucide="award"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Лет опыта</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="icon" data-lucide="clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Круглосуточно</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" id="bookAppointment">
+                        <i class="icon" data-lucide="calendar-plus"></i>
+                        Записаться на прием
+                    </button>
+                    <button class="btn-secondary" id="emergencyCall">
+                        <i class="icon" data-lucide="phone-call"></i>
+                        Экстренная связь
+                    </button>
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature-tag">
+                        <i class="icon" data-lucide="check-circle"></i>
+                        <span>Онлайн консультации</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="icon" data-lucide="check-circle"></i>
+                        <span>Современное оборудование</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="icon" data-lucide="check-circle"></i>
+                        <span>Быстрые результаты</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="appointment-card">
+                    <div class="card-header">
+                        <h3>Быстрая запись</h3>
+                        <p>Выберите врача и время</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="doctor-select">
+                            <div class="doctor-option">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%2306b6d4'/%3E%3Ctext x='20' y='26' font-family='Arial' font-size='16' font-weight='bold' text-anchor='middle' fill='white'%3EД%3C/text%3E%3C/svg%3E"
+                                    alt="Doctor" class="doctor-avatar">
+                                <div class="doctor-info">
+                                    <span class="doctor-name">Д-р Иванов</span>
+                                    <span class="doctor-spec">Кардиолог</span>
+                                </div>
+                                <span class="appointment-time">14:30</span>
+                            </div>
+                        </div>
+                        <div class="appointment-actions">
+                            <button class="quick-book-btn">
+                                <i class="icon" data-lucide="calendar-check"></i>
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="medical-icon icon-1">
+                        <i class="icon" data-lucide="heart"></i>
+                    </div>
+                    <div class="medical-icon icon-2">
+                        <i class="icon" data-lucide="brain"></i>
+                    </div>
+                    <div class="medical-icon icon-3">
+                        <i class="icon" data-lucide="eye"></i>
+                    </div>
+                    <div class="medical-icon icon-4">
+                        <i class="icon" data-lucide="bone"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="icon" data-lucide="stethoscope"></i>
+                    Наши услуги
+                </span>
+                <h2 class="section-title">Полный спектр медицинских услуг</h2>
+                <p class="section-subtitle">
+                    Современная диагностика, лечение и профилактика заболеваний
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="heart-pulse"></i>
+                    </div>
+                    <h3 class="service-title">Кардиология</h3>
+                    <p class="service-description">
+                        Диагностика и лечение заболеваний сердечно-сосудистой системы.
+                        ЭКГ, УЗИ сердца, холтер мониторинг.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">ЭКГ</span>
+                        <span class="feature">УЗИ сердца</span>
+                        <span class="feature">Холтер</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 1,500 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="popular-badge">Популярное</div>
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="brain"></i>
+                    </div>
+                    <h3 class="service-title">Неврология</h3>
+                    <p class="service-description">
+                        Лечение заболеваний нервной системы. Современные методы
+                        диагностики и эффективное лечение.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">МРТ</span>
+                        <span class="feature">ЭЭГ</span>
+                        <span class="feature">Консультация</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 2,000 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="eye"></i>
+                    </div>
+                    <h3 class="service-title">Офтальмология</h3>
+                    <p class="service-description">
+                        Диагностика и лечение глазных заболеваний. Проверка зрения,
+                        подбор очков и контактных линз.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Проверка зрения</span>
+                        <span class="feature">Подбор очков</span>
+                        <span class="feature">Операции</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 1,200 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="bone"></i>
+                    </div>
+                    <h3 class="service-title">Травматология</h3>
+                    <p class="service-description">
+                        Лечение травм и заболеваний опорно-двигательного аппарата.
+                        Рентген, МРТ, реабилитация.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Рентген</span>
+                        <span class="feature">МРТ</span>
+                        <span class="feature">Реабилитация</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 1,800 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="baby"></i>
+                    </div>
+                    <h3 class="service-title">Педиатрия</h3>
+                    <p class="service-description">
+                        Медицинская помощь детям от рождения до 18 лет.
+                        Профилактические осмотры и лечение.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Осмотры</span>
+                        <span class="feature">Вакцинация</span>
+                        <span class="feature">Анализы</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 1,000 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="icon" data-lucide="microscope"></i>
+                    </div>
+                    <h3 class="service-title">Лабораторная диагностика</h3>
+                    <p class="service-description">
+                        Широкий спектр лабораторных исследований.
+                        Быстрые и точные результаты анализов.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Общий анализ</span>
+                        <span class="feature">Биохимия</span>
+                        <span class="feature">Гормоны</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">от 300 ₽</span>
+                        <button class="service-btn">
+                            <i class="icon" data-lucide="calendar-plus"></i>
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="icon" data-lucide="user-check"></i>
+                    Наши врачи
+                </span>
+                <h2 class="section-title">Команда профессионалов</h2>
+                <p class="section-subtitle">
+                    Опытные специалисты с многолетней практикой
+                </p>
+            </div>
+
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%2306b6d4'/%3E%3Ctext x='60' y='70' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'%3EИВ%3C/text%3E%3C/svg%3E"
+                            alt="Доктор Иванов">
+                        <div class="doctor-status online"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Д-р Алексей Иванов</h3>
+                        <p class="doctor-specialty">Кардиолог</p>
+                        <div class="doctor-experience">
+                            <span class="experience">15 лет опыта</span>
+                            <div class="rating">
+                                <i class="icon" data-lucide="star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="doctor-description">
+                            Специализируется на лечении заболеваний сердца и сосудов.
+                            Кандидат медицинских наук.
+                        </p>
+                        <div class="doctor-actions">
+                            <button class="btn-primary doctor-btn">
+                                <i class="icon" data-lucide="calendar-plus"></i>
+                                Записаться
+                            </button>
+                            <button class="btn-outline doctor-btn">
+                                <i class="icon" data-lucide="message-circle"></i>
+                                Консультация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23ec4899'/%3E%3Ctext x='60' y='70' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'%3EСМ%3C/text%3E%3C/svg%3E"
+                            alt="Доктор Смирнова">
+                        <div class="doctor-status online"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Д-р Елена Смирнова</h3>
+                        <p class="doctor-specialty">Невролог</p>
+                        <div class="doctor-experience">
+                            <span class="experience">12 лет опыта</span>
+                            <div class="rating">
+                                <i class="icon" data-lucide="star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <p class="doctor-description">
+                            Эксперт в области неврологии. Занимается лечением мигрени,
+                            эпилепсии и других неврологических заболеваний.
+                        </p>
+                        <div class="doctor-actions">
+                            <button class="btn-primary doctor-btn">
+                                <i class="icon" data-lucide="calendar-plus"></i>
+                                Записаться
+                            </button>
+                            <button class="btn-outline doctor-btn">
+                                <i class="icon" data-lucide="message-circle"></i>
+                                Консультация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%2316a34a'/%3E%3Ctext x='60' y='70' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'%3EПВ%3C/text%3E%3C/svg%3E"
+                            alt="Доктор Петров">
+                        <div class="doctor-status busy"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Д-р Михаил Петров</h3>
+                        <p class="doctor-specialty">Офтальмолог</p>
+                        <div class="doctor-experience">
+                            <span class="experience">10 лет опыта</span>
+                            <div class="rating">
+                                <i class="icon" data-lucide="star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <p class="doctor-description">
+                            Специалист по заболеваниям глаз. Выполняет операции
+                            по коррекции зрения и лечению катаракты.
+                        </p>
+                        <div class="doctor-actions">
+                            <button class="btn-primary doctor-btn">
+                                <i class="icon" data-lucide="calendar-plus"></i>
+                                Записаться
+                            </button>
+                            <button class="btn-outline doctor-btn">
+                                <i class="icon" data-lucide="message-circle"></i>
+                                Консультация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Записаться на прием</h2>
+                <button class="modal-close" id="modalClose">
+                    <i class="icon" data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="appointment-form" id="appointmentForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="patientName">Ваше имя</label>
+                            <input type="text" id="patientName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patientPhone">Телефон</label>
+                            <input type="tel" id="patientPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patientEmail">Email</label>
+                            <input type="email" id="patientEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceSelect">Услуга</label>
+                            <select id="serviceSelect" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="cardiology">Кардиология</option>
+                                <option value="neurology">Неврология</option>
+                                <option value="ophthalmology">Офтальмология</option>
+                                <option value="traumatology">Травматология</option>
+                                <option value="pediatrics">Педиатрия</option>
+                                <option value="laboratory">Анализы</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctorSelect">Врач</label>
+                            <select id="doctorSelect" name="doctor" required>
+                                <option value="">Выберите врача</option>
+                                <option value="ivanov">Д-р Иванов (Кардиолог)</option>
+                                <option value="smirnova">Д-р Смирнова (Невролог)</option>
+                                <option value="petrov">Д-р Петров (Офтальмолог)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDate">Дата</label>
+                            <input type="date" id="appointmentDate" name="date" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="appointmentMessage">Дополнительная информация</label>
+                            <textarea id="appointmentMessage" name="message"
+                                placeholder="Опишите ваши симптомы или вопросы..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelAppointment">Отмена</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="icon" data-lucide="calendar-check"></i>
+                            Записаться на прием
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="icon" data-lucide="heart-pulse"></i>
+                        <span class="logo-text">МедЦентр</span>
+                    </div>
+                    <p class="footer-description">
+                        Современная клиника с полным спектром медицинских услуг.
+                        Заботимся о вашем здоровье с 2012 года.
+                    </p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="icon" data-lucide="phone"></i>
+                            <span>+7 (495) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon" data-lucide="mail"></i>
+                            <span>info@medcenter.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon" data-lucide="map-pin"></i>
+                            <span>Москва, ул. Здоровья, 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Кардиология</a></li>
+                        <li><a href="#services">Неврология</a></li>
+                        <li><a href="#services">Офтальмология</a></li>
+                        <li><a href="#services">Травматология</a></li>
+                        <li><a href="#services">Педиатрия</a></li>
+                        <li><a href="#services">Анализы</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">О клинике</a></li>
+                        <li><a href="#doctors">Врачи</a></li>
+                        <li><a href="#">Лицензии</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">График работы</h4>
+                    <div class="working-hours">
+                        <div class="hours-item">
+                            <span>Пн-Пт:</span>
+                            <span>8:00 - 20:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Суббота:</span>
+                            <span>9:00 - 18:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Воскресенье:</span>
+                            <span>10:00 - 16:00</span>
+                        </div>
+                    </div>
+                    <div class="emergency-contact">
+                        <div class="emergency-badge">
+                            <i class="icon" data-lucide="phone-call"></i>
+                            <span>Экстренная связь: +7 (495) 911-22-33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 МедЦентр. Все права защищены.</p>
+                    <div class="footer-links-bottom">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Условия использования</a>
+                        <a href="#">Лицензия</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
